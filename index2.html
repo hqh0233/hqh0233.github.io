@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航栏</title>
+    <style>
+        @font-face {
+            font-family: 'iconfont';  /* project id 1395889 */
+            src: url('//at.alicdn.com/t/font_1395889_hhnlerx9x8.eot');
+            src: url('//at.alicdn.com/t/font_1395889_hhnlerx9x8.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_1395889_hhnlerx9x8.woff2') format('woff2'),
+            url('//at.alicdn.com/t/font_1395889_hhnlerx9x8.woff') format('woff'),
+            url('//at.alicdn.com/t/font_1395889_hhnlerx9x8.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_1395889_hhnlerx9x8.svg#iconfont') format('svg');
+        }
+        .iconfont{
+            font-family:"iconfont" !important;
+            font-size:16px;font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: red;
+            height: 50px;
+            position: relative;
+        }
+
+        li {
+            float: left;
+            color: white;
+            padding: 14px 16px;
+            margin: 0;
+            width:110px;
+            height: 155px;
+            position: relative;
+            left: 20px;
+        }
+        li:last-child{
+            float: right;
+            left: -20px;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+        }
+        .content{
+            display: none;
+            position: relative;
+            width: 144px;
+            height: 155px;
+            top:15px;
+            left: -17px;
+            background-color: gainsboro;
+            margin: 0;
+
+
+        }
+        .content a{
+            text-decoration: none;
+            padding: 5px 10px;
+            color: black;
+            opacity: 0.6;
+
+        }
+        ul:hover .content{
+            display: inline-block;
+        }
+        li:hover .content{
+            background-color: white;
+        }
+        li:hover .content a{
+            opacity: 1;
+        }
+        li:hover{
+            background-color: crimson;
+        }
+        li[id="we"]:hover .content{
+            background-color: gainsboro;
+        }
+        .top:hover .top1{
+            display: block;
+        }
+        .item:hover{
+            display: block;
+            text-decoration: underline red;
+        }
+        .top1{
+            position: relative;
+            width: 100%;
+            height: 155px;
+            background-color: gainsboro;
+            z-index: -1;
+            display: none;
+            border-bottom: gray 1px solid;
+            box-shadow:2px 2px 3px #aaaaaa;
+
+        }
+
+        @font-face {
+            font-family: 'iconfont';  /* project id 1395889 */
+            src: url('//at.alicdn.com/t/font_1395889_hhnlerx9x8.eot');
+            src: url('//at.alicdn.com/t/font_1395889_hhnlerx9x8.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_1395889_hhnlerx9x8.woff2') format('woff2'),
+            url('//at.alicdn.com/t/font_1395889_hhnlerx9x8.woff') format('woff'),
+            url('//at.alicdn.com/t/font_1395889_hhnlerx9x8.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_1395889_hhnlerx9x8.svg#iconfont') format('svg');
+        }
+        .iconfont{
+            font-family:"iconfont" !important;
+            font-size:16px;font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <ul>
+        <li>
+            <i class="iconfont">&#xe63a;</i>
+            <a href="#home">主页</a>
+            <div class="content">
+                <a href="#" class="item">二级导航1</a>
+                <a href="#" class="item">二级导航2</a>
+                <a href="#" class="item">二级导航3</a>
+                <a href="#" class="item">二级导航4</a>
+            </div>
+        </li>
+        <li>
+            <i class="iconfont">&#xe618;</i>
+            <a href="#download">下载</a>
+            <div class="content">
+                <a href="#" class="item">二级导航1</a>
+                <a href="#" class="item">二级导航2</a>
+                <a href="#" class="item">二级导航3</a>
+                <a href="#" class="item">二级导航4</a>
+            </div>
+
+        </li>
+        <li>
+            <i class="iconfont">&#xe600;</i>
+            <a href="#sussess">成功案例</a>
+            <div class="content">
+                <a href="#" class="item">二级导航1</a>
+                <a href="#" class="item">二级导航2</a>
+                <a href="#" class="item">二级导航3</a>
+                <a href="#" class="item">二级导航4</a>
+            </div>
+        </li>
+        <li>
+            <i class="iconfont">&#xe631;</i>
+            <a href="#home">新闻</a>
+            <div class="content">
+                <a href="#" class="item">二级导航1</a>
+                <a href="#" class="item">二级导航2</a>
+
+            </div>
+        </li>
+        <li>
+            <i class="iconfont">&#xe62b;</i>
+            <a href="#home">与我们联系</a>
+            <div class="content">
+                <a href="#" class="item">二级导航1</a>
+                <a href="#" class="item">二级导航2</a>
+                <a href="#" class="item">二级导航3</a>
+
+            </div>
+        </li>
+        <li id="we">
+            <i class="iconfont" >&#xe605;</i>
+            <a href="#home">关于我们</a>
+            <div class="content">
+            </div>
+        </li>
+        <li>
+            <i class="iconfont">&#xe61d;</i>
+            <a href="#home">个人中心</a>
+            <div class="content">
+                <a href="#" class="item">修 改 资 料 </a>
+                <a href="#" class="item">在 线 充 值 </a>
+                <a href="#" class="item">升 级 会 员 </a>
+                <a href="#" class="item">安 全 设 置 </a>
+                <a href="#" class="item">退 出 账 号 </a>
+            </div>
+        </li>
+    </ul>
+    <div class="top1"></div>
+</div>
+</body>
+</html>
