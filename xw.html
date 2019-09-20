@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>hqh</title>
+    <style>
+        .main{
+            border-top: solid gray;
+            width: 800px;
+            margin:0 auto;
+        }
+        .fl{
+            float: left;
+        }
+        ul{
+            list-style-type: none;
+            overflow: hidden;
+            margin: 0 auto;
+            padding: 0 auto;
+        }
+        li{
+            float: left;
+        }
+        a:link{
+            color: black;
+            font-weight: bold;
+            margin:0px;
+            padding: 5px 20px 5px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        a.imp{
+            color: blue;
+            font-weight: bold;
+        }
+        .header{
+            margin-top: 5px;
+        }
+        .header1{
+            background-color: blue;
+            height: 25px;
+            float: left;
+            width: 100%;
+            color: #FFFFFF;
+            display: table-cell;
+            vertical-align: middle;
+            margin-top: 6px;
+        }
+        .header1 span{
+            float: left;
+            text-align: center;
+
+        }
+        select{
+
+            height: 21px;
+            margin-top: 2px;
+        }
+        form{
+            float: right;
+            overflow: hidden;
+        }
+        input{
+            height: auto;
+        }
+        .left{
+            width: 605px;
+            border-right: gainsboro solid;
+            margin-top: 3px;
+
+        }
+        .right{
+            width: 195px;
+            margin-left: 610px;
+            margin-top: 37px;
+            border-top: black solid;
+        }
+        .left-top{
+            width: 600px;
+            overflow: hidden;
+            border-bottom: solid gainsboro;
+            height: 480px;
+        }
+        .left1{
+            width: 400px;
+        }
+        .left-right{
+            width: 200px;
+            float: left;
+            margin-top: 3px;
+            text-indent: 25px;
+            text-align: justify;
+        }
+        .left-footer{
+            width: 600px;
+            overflow: hidden;
+            border-style: none;
+
+        }
+        div.left1#left1-top{
+            margin:3px;
+            border: solid #bebebe;
+            width:390px;
+        }
+        div.left1#left1-top img{
+            float: left;
+            border-bottom:1px solid #bebebe;
+            width: 390px;
+        }
+        .left1#left1-top .desc{
+            text-align:center;
+
+            width:390px;
+
+            margin:10px 5px 10px 5px;
+        }
+        .left1#left-footer1,.left1#left-footer2{
+            margin:0 auto;
+            margin-left: 3px;
+            border: solid #bebebe;
+            width:190px;
+            height: 140px;
+        }
+        .left1#left-footer1 img,.left1#left-footer2 img{
+            border-bottom:1px solid #bebebe;
+            width: 190px;
+        }
+        .left1 .desc,. .desc{
+            text-align: left;
+            width:190px;
+
+            margin:10px 5px 10px 5px;
+        }
+        .left1#left-footer h3{
+            margin-left: 8px;
+            margin-top: 0;
+        }
+        .left-footerA#left-footera,.left-footerA#left-footerb,.left-footerA#left-footerc,.left-footerA#left-footerd{
+            margin: 0 auto;
+            margin-left: 3px;
+            border: solid #bebebe;
+            width:140px;
+            height: 110px;
+            float: left;
+        }
+        .left-footerA#left-footera img,.left-footerA#left-footerb img,.left-footerA#left-footerc img,.left-footerA#left-footerd img{
+            border-bottom:1px solid #bebebe;
+            width: 140px;
+        }
+        .left-footerA#left-footera desc,.left-footerA#left-footerb desc,.left-footerA#left-footerc desc,.left-footerA#left-footerd desc{
+            text-align: left;
+            font-weight:normal;
+            width:140px;
+            font-size:12px;
+            margin:10px 5px 10px 5px;
+        }
+        .left-footer-top h3{
+            margin-left: 8px;
+            margin-top: 3px;
+            float: left;
+        }
+        .left-footer-top{
+            border-style:none;
+            height: 30px;
+            background-color: white;
+            width: 100%;
+        }
+        .left-footer-top button{
+            float: right;
+            border-style: none;
+            background-color: white;
+            margin-top: 3px;
+        }
+        .right1#right-top h3{
+            margin-left: 8px;
+            margin-top: 2px;
+            margin-bottom: 0;
+            float: left;
+            white-space: nowrap;
+        }
+        .right1#right-footer h3{
+            margin-left: 8px;
+            margin-top: 2px;
+            margin-bottom: 0;
+            float: left;
+            white-space: nowrap;
+        }
+        .right1{
+            float: left;
+            margin-top: 5px;
+            font-size: small;
+        }
+        .right1 img{
+            width: 110px;
+            height: 100px;
+        }
+        #right-top1-text,#right-top2-text,#right-footer1-text,#right-footer2-text{
+            text-align: justify;
+            width: 80px;
+            margin: 1.5px;
+        }
+        #right-top1 p,#right-top2 p,#right-footer1 p,#right-footer2 p{
+            margin: 0 auto;
+        }
+        .right1 span button{
+            border-style: none;
+            background-color: white;
+            color: blue;
+        }
+        .right1#right-top2,.right1#right-footer2{
+            border-top: gainsboro solid;
+            margin-top: 12px;
+            padding-top: 3px;
+        }
+        .right1#right-footer{
+            border-top: black solid;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="header">
+        <ul>
+            <li><a href="#首页">首页</a></li>
+            <li><a href="#国内">国内</a></li>
+            <li><a class="imp" href="#国际">国际</a></li>
+            <li><a href="#军事">军事</a></li>
+            <li><a href="#社会">社会</a></li>
+            <li><a href="#视频">视频</a></li>
+            <li><a href="#文化">文化</a></li>
+            <li><a href="#VR视频">VR视频</a></li>
+            <li><a href="#评论">评论</a></li>
+            <li><a href="#图片">图片</a></li>
+        </ul>
+        <div class="header1">
+            <span>国际滚动</span>
+            <form name="myform" onsubmit="return hqh()">
+                <select name="content">
+                    <option value="新闻">新闻</option>
+                    <option value="说明">说明</option>
+                    <option value="工具">工具</option>
+                    <option value="代码">代码</option>
+                </select>
+                <input type="text" name="txt">
+                <input type="submit" value="搜索" >
+            </form>
+        </div>
+    </div>
+    <div class="left fl">
+        <div class="left-top fl">
+            <div class="left1 fl">
+                <div class="left1 fl" id="left1-top">
+                    <img src="2.jpg" >
+                    <div class="desc">白蛇缘起小白</div>
+                </div>
+                <div class="left1 fl" id="left-footer">
+                    <div style="width: 4px;height: 20px;background-color: blue;float: left;margin-left: 3px;margin-top: 7px"></div>
+                    <h3>新闻视频</h3>
+                    <div class="left1 fl" id="left-footer1">
+                        <img src="3.jpg" >
+                        <div class="desc">白蛇缘起小白</div>
+                    </div>
+                    <div class="left1 fl" id="left-footer2">
+                        <img src="4.jpg" >
+                        <div class="desc">白蛇缘起小白</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="left-right fl" >
+                <p>2016年11月9日，毫无从政经验的共和党人特朗
+                    普，在美国大选中逆袭击败希拉里，夺下总统
+                    宝座。两个多月后的今天，候任总统特朗普将
+                    正式宣誓就职，成为美国第45任总统，白宫也
+                    将迎来新主人。近半个多世纪以来，美国历任
+                    总统都是在1月20日宣誓就职，就职地点通常
+                    在国会大厦，流程大同小异。本次，当地时间
+                    1月20日早，特朗普夫妇和副手彭斯夫妇完成
+                    早祷后，将由国会联合就职典礼委员会成员陪
+                    同前往白宫。在简短会面后，奥巴马夫妇将陪
+                    同特朗普夫妇经由宾夕法尼亚大道前往国会大
+                    厦 。
+                </p>
+            </div>
+        </div>
+        <div class="left-footer fl">
+            <div class="left-footer-top">
+                <div style="width: 4px;height: 20px;background-color: blue;float: left;margin-left: 3px;margin-top: 3px"></div>
+                <h3>图片</h3>
+                <button onclick="more()">更多</button>
+            </div>
+            <div class="left-footer fl">
+                <div class="left-footerA fl" id="left-footera">
+                    <img src="2.jpg" >
+                    <div class="desc">白蛇缘起小白</div>
+                </div>
+                <div class="left-footerA fl" id="left-footerb">
+                    <img src="3.jpg" >
+                    <div class="desc">白蛇缘起小白</div>
+                </div>
+                <div class="left-footerA fl" id="left-footerc">
+                    <img src="4.jpg" >
+                    <div class="desc">白蛇缘起小白</div>
+                </div>
+                <div class="left-footerA fl" id="left-footerd">
+                    <img src="4.jpg" >
+                    <div class="desc">白蛇缘起小白</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="right">
+        <div class="right1" id="right-top">
+            <div style="width: 4px;height: 20px;background-color: blue;float: left;margin-left: 3px;margin-top: 1px"></div>
+            <h3>海外观察</h3>
+            <div class="right1" id="right-top1">
+                <p>拿错剧本？特朗普为何爱主权</p>
+                <div class="right1" id="right-top1-img">
+                    <img src="2.jpg">
+                </div>
+                <div class="right1" id="right-top1-text">
+                    <span>近半个多世纪以来 ，美国历任总统都是在1月20日宣誓就职。<button onclick="minute()">[详细]</button> </span>
+                </div>
+            </div>
+            <div class="right1" id="right-top2">
+                <p>美大法官票选为何不摆脱政治</p>
+                <div class="right1" id="right-top2-img">
+                    <img src="3.jpg">
+                </div>
+                <div class="right1" id="right-top2-text">
+                    <span>近半个多世纪以来 ，美国历任总统都是在1月20日宣誓就职。<button onclick="minute()">[详细]</button> </span>
+                </div>
+            </div>
+
+        </div><br>
+        <div class="right1" id="right-footer">
+            <div style="width: 4px;height: 20px;background-color: blue;float: left;margin-left: 3px;margin-top: 1px"></div>
+            <h3>今日深度</h3>
+            <div class="right1" id="right-footer1">
+                <p>中国冷遇蓬佩奥无碍半岛促和</p>
+                <div class="right1" id="right-footer1-img">
+                    <img src="2.jpg">
+                </div>
+                <div class="right1" id="right-footer1-text">
+                    <span>近半个多世纪以来 ，美国历任总统都是在1月20日宣誓就职。<button onclick="minute()">[详细]</button> </span>
+                </div>
+            </div>
+            <div class="right1" id="right-footer2">
+                <p>拿错剧本？特朗普为何爱主权</p>
+                <div class="right1" id="right-footer2-img">
+                    <img src="3.jpg">
+                </div>
+                <div class="right1" id="right-footer2-text">
+                    <span>近半个多世纪以来 ，美国历任总统都是在1月20日宣誓就职。<button onclick="minute()">[详细]</button> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var x="2016年11月9日，毫无从政经验的共和党人特朗普，在美国大选中逆袭击败希拉里，夺下总统宝座。两个多月后的今天，候任总统特朗普将正式宣誓就职，成为美国第45任总统，白宫也将迎来新主人。\n" +
+        "\n" +
+        "近半个多世纪以来，美国历任总统都是在1月20日宣誓就职，就职地点通常在国会大厦，流程大同小异。\n" +
+        "\n" +
+        "本次，当地时间1月20日早，特朗普夫妇和副手彭斯夫妇完成早祷后，将由国会联合就职典礼委员会成员陪同前往白宫。在简短会面后，奥巴马夫妇将陪同特朗普夫妇经由宾夕法尼亚大道前往国会大厦。\n" +
+        "\n" +
+        "就职典礼开幕式将在上午11时30分拉开帷幕，而活动的高潮部分——宣誓就职仪式则从中午12时开始。在美国首席大法官的监督以及家人陪伴下，特朗普将手按两本《圣经》完成宣誓。值得一提的是，其中一本是其母亲所赠，另一本则是100多年前的美国总统亚伯拉罕·林肯 宣誓时用的《圣经》。"
+    function more() {
+        alert("没有了")
+    }
+    function minute() {
+        alert(x)
+    }
+    function hqh() {
+        var y=document.forms["myform"]["txt"].value;
+        if(y==""){
+            alert("请输入信息");
+            return flase;
+        }
+    }
+</script>
+</body>
+</html>
