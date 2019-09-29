@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ注册</title>
+    <script src="https://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+    <script src="https://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+    <script src="https://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+    <script>
+        $.validator.setDefaults({
+            submitHandler:function (form) {
+                alert("提交事件!")
+                form.submit()
+            }
+
+        });
+        $(document).ready(function () {
+
+            // $("#yz").click(function () {
+            //     $(this).css("background","gainsboro")
+            //         .attr("disabled",true)
+            //})
+           var validator=$("#register").validate({
+               invalidHandler:function(){
+                   $("input[id="*"]").blur()
+               },
+                rules:{
+                    nc:{
+                        required:true,
+                        minlength:2
+                    },
+                    mm:{
+                      required: true,
+                        minlength: 6
+                    },
+                    sj:{
+                        required:true,
+                        rangelength:[10,12]
+                    },
+
+                },
+                messages:{
+                    nc:{
+                        required:"昵称不能为空",
+                        minlength:"请输入不少于2个字的昵称"
+                    },
+                    mm:{
+                        required:"密码不能为空",
+                        minlength:"请输入不少于6个字符的密码"
+                    },
+                    sj:{
+                        required:"手机不能为空",
+                        rangelength: "请输入正确的手机号"
+                    },
+                },
+                // invalidHandler:function () {
+                //
+                // }
+
+
+        });
+            $("#yz").click(function () {
+                var b=validator.element("#sj")
+                if(b==false){
+                    $("#yz").css("background","gainsboro")
+                        .attr("disabled",true)
+                }
+
+            })
+                $("#zc").click(function () {
+                    var b=validator.element("#sj")
+                    if(b==false) {
+                        $("#yz").css("background", "gainsboro")
+                            .attr("disabled", true)
+                    }
+                    // validator.form()
+                })
+            $("#sj").focus(function () {
+                $("#yz").css("background", "blue")
+                    .attr("disabled", false)
+                $("span").css("display","inline")
+            })
+
+
+        });
+
+    </script>
+
+    <style>
+        span{display: none}
+        .error{
+            color:red;
+            display:inline-block;
+        }
+        .left{
+            width: 40%;
+            height: 900px;
+            float: left;
+            border: gainsboro solid;
+            background-image: url("img/2.jpg");
+            position: fixed;
+            background-size: auto;
+
+        }
+        .right{
+            width: 60%;
+            height:1080px;
+            padding-left: 45%;
+            padding-top: 100px;
+            text-align: center;
+        }
+
+        img{
+            width: 10%;
+            height: auto;
+        }
+        input{
+            margin-bottom: 20px;
+        }
+        #nc,#mm,#zc{
+            width: 400px;
+            height: 40px;
+            font-size: large;
+            border-radius: 3px;
+            border: gainsboro solid 1px;
+        }
+        #sj,#yz{
+            width: 300px;
+            height: 40px;
+            font-size: large;
+            border-radius: 3px;
+            border: gainsboro solid 1px;
+        }
+        #yz,#zc{
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+<div class="left">
+</div>
+<div class="right">
+    <div class="right1" style="float: left;text-align: left">
+    <h1 >欢迎注册QQ</h1>
+    <h3>每一天,乐在沟通</h3>
+        <div>
+            <form id="register" method="post" name="register" >
+                <input placeholder="昵称" type="text" id="nc" name="nc">
+                <br>
+                <input placeholder="密码" type="password"  id="mm" name="mm">
+               <br>
+                <select style="width: 100px; height: 40px;font-size: large;border: gainsboro solid 1px;border-radius: 3px">
+                    <option>+86</option>
+                    <option>+852</option>
+                </select>
+                <input placeholder="手机号码" type="text" id="sj" name="sj" style="width: 300px; height: 40px;font-size: large">
+                <br>
+                <span>
+                <input type="text" id="yzm" name="yzm" style="width: 100px; height: 40px;font-size: large;border: gainsboro solid 1px;border-radius: 3px">
+                <button  id="yz" name="yz">发送短信验证码</button></span>
+                <button id="zc" name="zc">立即注册</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
